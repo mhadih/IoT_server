@@ -4,10 +4,14 @@ var user = require('./User');
 
 /* GET home page. */
 
-router.get('/', function (res, req, next) {
-    
+app = express();
+app.set('view engine', 'ejs');
+
+router.get('/', function (req, res, next) {
+    console.log("hadi");
+    return res.render('login.ejs');
 });
 
-router.use('/user', user);  
+router.use('/user', user);
 
 module.exports = router;
