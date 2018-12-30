@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="signup-logo">SIGNUP</div>
+      <div class="inputs">
+        <div class="static-parts">
+          <div class="group-name form-part">
+            <div class="input-icon">
+              <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="input-part">
+              <input
+                type="text"
+                class="group-name-input"
+                placeholder="group name"
+              />
+            </div>
+          </div>
+          <div class="thing-speak form-part">
+            <div class="input-icon">
+              <i class="fa fa-thermometer-empty fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="input-part">
+              <input
+                type="text"
+                class="thing-speak-input"
+                placeholder="thing speak channel"
+              />
+            </div>
+          </div>
+          <div class="password form-part">
+            <div class="input-icon">
+              <i class="fa fa-unlock-alt fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="input-part">
+              <input
+                type="password"
+                class="password-input"
+                placeholder="password"
+              />
+            </div>
+            <div class="input-icon eye-icon clickable" onclick="togglePass()">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="dynamic-parts">
+          <div class="member-name form-part">
+            <div class="input-icon">
+              <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="input-part">
+              <input
+                type="text"
+                class="member-name-input"
+                placeholder="member name"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="add-member clickable" onclick="addMember()">+</div>
+      <div class="signup-button">
+        <button class="signup-btn clickable">signup</button>
+      </div>
+      <div class="login">already have an acount ?? <a href="#">login</a></div>
+    </div>
+  </body>
+  <script src="javascripts/main.js"></script>
+</html>
