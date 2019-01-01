@@ -8,7 +8,6 @@ app = express();
 app.set('view engine', 'ejs');
 
 router.get('/', function (req, res, next) {
-    console.log("hadi");
     return res.render('login.ejs');
 });
 
