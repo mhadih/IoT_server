@@ -3,12 +3,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
 
 var app = express();
-
+const mongoose = require('./utils/mongodb');
 
 
 // mongoose.connect('mongodb://iotdb:123QWEasd@ds149034.mlab.com:49034/iot', {useNewUrlParser:true});
