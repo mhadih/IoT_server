@@ -10,18 +10,6 @@ var app = express();
 const mongoose = require('./utils/mongodb');
 
 
-// mongoose.connect('mongodb://iotdb:123QWEasd@ds149034.mlab.com:49034/iot', {useNewUrlParser:true});
-// var db = mongoose.connection;
-// db.on('error', console.error.bind(console, 'connection error:'));
-
-
-mongoose.connect('mongodb://iotdb:123QWEasd@ds149034.mlab.com:49034/iot', { useNewUrlParser: true }, function(err) {
-  if (err) {
-    console.log('cant connect to DB');
-  } else {
-    console.log('connected to mongoDB');
-  }
-});
 
 
 // view engine setup
