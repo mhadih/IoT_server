@@ -19,19 +19,6 @@ router.post('/', async function(req, res, next){
   //   data: { Token: Token }
   // });
   return res.status(200).send();
-
-
-
-
-
-
-
-
-
-
-
-
-  \
 }); 
 
 module.exports = router;
